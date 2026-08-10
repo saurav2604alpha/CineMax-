@@ -48,6 +48,7 @@ const SeatSelection = () => {
     if (!id) return;
 
     const s = connectSocket();
+    if (!s) return;
     socketRef.current = s;
 
     s.emit("join-showtime", { showtimeId: id });

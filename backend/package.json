@@ -1,14 +1,19 @@
 {
   "name": "cinemax-backend",
   "version": "1.0.0",
-  "main": "server.js",
+  "author": "Saurav Rathour",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
+    "check": "node --check app.js && node --check index.js && node --check server.js && node --check config/database.js && node --check config/cors.js",
     "seed": "node utils/seed.js"
   },
   "type": "commonjs",
   "description": "CineMax Cinema Booking Backend",
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",

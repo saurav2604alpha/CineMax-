@@ -2,11 +2,15 @@
   "name": "cinemax-client",
   "private": true,
   "version": "1.0.0",
+  "author": "Saurav Rathour",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --configLoader runner",
     "preview": "vite preview"
+  },
+  "engines": {
+    "node": "24.x"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.7.0",

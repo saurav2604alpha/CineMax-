@@ -1,0 +1,22 @@
+{
+  "name": "cinemax",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack cinema booking platform",
+  "author": "Saurav Rathour",
+  "workspaces": [
+    "client",
+    "backend"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=cinemax-client",
+    "start": "npm start --workspace=cinemax-backend",
+    "check": "npm run check --workspace=cinemax-backend && npm run build --workspace=cinemax-client",
+    "dev:client": "npm run dev --workspace=cinemax-client",
+    "dev:backend": "npm run dev --workspace=cinemax-backend",
+    "seed": "npm run seed --workspace=cinemax-backend"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

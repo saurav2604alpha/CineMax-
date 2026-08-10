@@ -9,6 +9,8 @@ A complete, production-ready MERN stack cinema booking platform with:
 - JWT authentication with role-based access
 - Framer Motion animations + dark cinema UI
 
+For production setup, follow [DEPLOYMENT.md](DEPLOYMENT.md).
+
 ---
 
 ## 📁 Project Structure
@@ -63,8 +65,8 @@ Edit `backend/.env` (already created with defaults):
 ```env
 MONGO_URL=mongodb://localhost:27017/cinemax
 PORT=8080
-ACCESS_TOKEN=cinemax_super_secret_access_token_32chars_min
-REFRESH_TOKEN=cinemax_super_secret_refresh_token_32chars_min
+ACCESS_TOKEN=replace_with_a_long_random_secret
+REFRESH_TOKEN=replace_with_a_different_long_random_secret
 CLIENT_URL=http://localhost:5173
 NODE_ENV=development
 
