@@ -14,3 +14,9 @@ pnpm-debug.log*
 Thumbs.db
 .vercel/
 .netlify/
+.env
+backend/.env
+node_modules/
+backend/node_modules/
+client/node_modules/
+dist/
